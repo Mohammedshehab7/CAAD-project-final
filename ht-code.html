@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Zero to Seven</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="navbar">
+    <a href="index.html">Home</a> <!-- Updated to link to the homepage -->
+    <a href="#synopsis">Synopsis</a>
+    <a href="#director">Director's Notes</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</div>
+
+
+<div class="banner"></div>
+
+
+<!--new intro--> 
+<div class="intro-section">
+    <h2 class="intro-section-header">Introduction</h2> <!-- Heading above the image -->
+    <div class="intro-content"> <!-- Container for image and text -->
+        <img src="https://i.imgur.com/AeLR1wg.png" alt="Intro Image" class="intro-img"> <!-- Small image on the left -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> <!-- Text on the right -->
+    </div>
+</div>
+
+
+
+<!-- New About the Documentary Section -->
+<!-- About the Documentary Section -->
+<div class="about-section">
+    <h2 class="about-section-header">About the Documentary</h2> <!-- Heading above the image -->
+    <div class="about-content"> <!-- Container for image and text -->
+        <img src="https://i.imgur.com/AeLR1wg.png" alt="About Image" class="about-img"> <!-- Small image on the left -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> <!-- Text on the right -->
+    </div>
+</div>
+
+
+
+<!-- New Trailer Section -->
+<div class="trailer-section">
+    <h2>Documentary Trailer</h2> <!-- Added header for clarity -->
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="watch-now-btn">Watch Now</a>
+</div>
+
+<div class="poll-container">
+    <h2>Poll</h2> <!-- This is the newly added distinct header for the poll section -->
+    <h3>What's Your Favorite Part of the Documentary?</h3> <!-- Adjusted to serve as the question -->
+    <form id="pollForm">
+        <input type="radio" id="story" name="poll" value="The Story">
+        <label for="story">The Story</label><br>
+        <input type="radio" id="cinematography" name="poll" value="The Cinematography">
+        <label for="cinematography">The Cinematography</label><br>
+        <input type="radio" id="soundtrack" name="poll" value="The Soundtrack">
+        <label for="soundtrack">The Soundtrack</label><br>
+        <button type="button" onclick="submitPoll()">Vote</button>
+    </form>
+    <p id="thankYouMessage" style="display:none;">Thank you for voting!</p>
+</div>
+
+
+
+<!-- New Contact Section -->
+<div class="contact-section">
+    <form action="submitForm()" method="POST">
+        <input type="text" id="name" name="name" placeholder="Your Name">
+        <input type="email" id="email" name="email" placeholder="Your Email">
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+
+
+
+
+
+
+<div class="content">
+    <h1>Welcome to the Official Site of 'From Zero to Seven'</h1>
+    <p>This is the starting point of your content. Here you can add details about the film, the vision behind it, and anything else you'd like to share with your audience.</p>
+    <!-- Add more content here as needed -->
+</div>
+
+<div class="footer">
+    <p>© 2024 From Zero to Seven Film. All rights reserved.</p>
+</div>
+
+</body>
+</html>
